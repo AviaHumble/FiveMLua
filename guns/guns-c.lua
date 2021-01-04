@@ -1,4 +1,4 @@
---[[RegisterCommand('clear', function()
+RegisterCommand('clear', function()
 	RemoveAllPedWeapons(GetPlayerPed(-1), true)
 	notify('~r~Removed all Weapons.')
 end)
@@ -14,7 +14,4 @@ Citizen.CreateThread(function()
 			alert('~r~Given you a pistol with ~INPUT_VEH_HEADLIGHT~')
 		end
 	end
-end) ]]--
-
-_menuPool = NativeUI.CreatePool()
-mainMenu = NativeUI.CreateMenu('Gun Menu', '~r~Choose a weapon from your bought weapons.')
+end)
